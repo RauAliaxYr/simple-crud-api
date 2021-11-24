@@ -1,0 +1,14 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "Simple CRUD API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Rau Aliaksandr",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
