@@ -1,0 +1,32 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "Simple CRUD API",
+  "main": "server.js",
+  "type": "module",
+  "nodemonConfig": {
+    "delay": 2000,
+    "ignore": [
+      "node_modules/*,"
+    ]
+  },
+  "scripts": {
+    "start:dev": "nodemon ./src/server.js",
+    "start:prod": "webpack --config webpack.config.cjs && node ./dist/main.js",
+    "test": "test"
+  },
+  "author": "Rau Aliaksandr",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@jest/globals": "^27.3.1",
+    "jest": "^27.3.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
